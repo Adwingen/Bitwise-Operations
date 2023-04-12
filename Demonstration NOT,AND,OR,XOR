@@ -1,0 +1,42 @@
+/*
+*
+* Advanced C Programming Masterclass: Pointers & Memory in C
+*
+* @theme Introducion to Bitwise Operations
+* @brief Demonstration NOT,AND,OR,XOR
+* @author Vlad Budnitski
+* @date 12/04/2023
+*
+*/
+
+
+#define _CRT_SECURE_NO_WARNINGS
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+
+int main()
+{
+    char x = 5;
+    char y = 7;
+
+    //NOT
+    char bitwiseNOT = ~x;
+    //AND
+    char bitwiseAND = x & y;
+    //OR
+    char bitwiseOR = x | y;
+    //XOR
+    char bitwiseXOR = x ^ y;
+
+    printf("Bitwise NOT: %d\n", bitwiseNOT);
+    printf("Bitwise AND: %d\n", bitwiseAND);
+    printf("Bitwise OR: %d\n", bitwiseOR);
+    printf("Bitwise XOR: %d\n", bitwiseXOR);
+
+
+    return 0;
+}
